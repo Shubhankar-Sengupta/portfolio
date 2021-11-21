@@ -1,0 +1,15 @@
+:root {
+
+    /*Colors Primary and Secondary*/
+    --primary-cyan:hsl(167, 36%, 54%);
+    --primary-dark-blue:hsl(205, 41%, 21%);
+    --primary-grayish-blue:hsl(245, 10%, 22%);
+    --secondary-very-light-grey:hsl(0, 0%, 98%);
+    --secondary-light-grey:hsl(240, 2%, 92%);
+    --secondary-bright-red:hsl(0, 90%, 57%);
+
+    /*fonts to use*/
+    --headings-font: 'Ibarra Real Nova', serif;
+    --body-font:'Public Sans', sans-serif;
+
+}
