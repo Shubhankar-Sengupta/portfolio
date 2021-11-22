@@ -13,3 +13,7 @@
     --body-font:'Public Sans', sans-serif;
 
 }
+
+body {
+    font-family: var(--body-font);
+}
