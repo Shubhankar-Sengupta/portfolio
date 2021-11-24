@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap');
+
+/*CSS custom properties*/
+/*Some global properties*/
+
 :root {
 
     /*Colors Primary and Secondary*/
@@ -16,4 +21,198 @@
 
 body {
     font-family: var(--body-font);
+}
+
+h1, h2, h3 {
+    font-family: var(--headings-font);
+    font-weight: 700;
+}
+
+ul, li {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+
+/*Home-page*/
+
+.f-c-m {
+    display: flex;
+}
+
+.nav-content {
+    min-width: 300px;
+    margin-left: auto;
+}
+
+.nav-content ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-content li  {
+    display: inline;
+}
+
+.nav-content a {
+    color: var(--primary-grayish-blue);
+    text-decoration: none;
+    font-size: .75em;
+}
+
+
+.f-home {
+    background-color: var(--primary-grayish-blue);
+}
+
+.f-h-nav {
+    display:flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.f-h-nav div {
+    max-width: 150px;
+    flex-grow: 1;
+    display: flex;
+}
+
+.f-h-nav div > * {
+    margin-left: auto;
+}
+
+
+.f-h-ul {
+    max-width: 400px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    margin-right: auto;
+}
+
+.f-h-ul li {
+    display: inline;
+}
+
+.f-h-ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+#about_me {
+    background-color: var(--primary-dark-blue);
+    color: #fff;
+}
+
+
+.p-h-info {
+    color: var(--primary-grayish-blue);
+    line-height: 2.083em;
+}
+
+
+.btn {
+    text-transform: uppercase;
+    border-radius: 0%;
+    font-size: .75em;
+    padding: .75em 1.75em;
+}
+
+
+.f-h-ul a {
+    font-size: .75em;
+}
+
+.h-a-info, .h-c-info {
+    display: flex;
+}
+
+.h-a-info {
+    padding-top: 6em;
+}
+
+.h-a-s-info-child { 
+    padding-left: 6em;
+    padding-right: 8em; 
+}
+
+
+
+.h-c-info {
+    justify-content: space-between;
+    padding-bottom: 8em;
+    padding-top: 4em;
+}
+
+
+.h-c-h2-child {
+    max-width: 290px;
+}
+
+.container-home-div1 {
+    position: relative;
+}
+
+.container-home-div2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 0px;
+    background-color: #fff;
+    max-width: 442px;
+    letter-spacing: -0.45px;
+    padding-top: 5em;
+    min-height: 353px;
+}
+
+/*Portfolio-page*/
+
+.portfolio-page-flex {
+    display: flex;
+    padding-bottom: 5em;
+}
+
+.p-order-diff {
+    order: -1;
+}
+
+
+/*Contact Page*/
+
+.contact-display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.frm-display {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;   
+}
+
+.c-grid-display {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(40px, 43px));
+}
+
+.contact-pg-btn-form {
+    color: #fff;
+    background-color: var(--primary-dark-blue);
+}
+
+.form-label {
+    font-weight: 700;
+    font-size: .8em;
+    line-height: 1.875em;
+}
+
+.form-control {
+    line-height: 2.275em;
+    font-size: .825em;
+    background-color: rgba(151, 151, 151, .3);
 }
