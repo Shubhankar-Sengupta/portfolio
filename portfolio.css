@@ -176,6 +176,48 @@ ul, li {
     min-height: 353px;
 }
 
+/*home page-media*/
+
+@media (orientation:portrait) {
+
+    .h-a-info, .h-c-info, .f-h-nav, .f-h-ul {
+        flex-direction: column;
+    }
+
+    .h-a-info {
+        padding-top: 2em;
+    }
+
+    .h-a-s-info-child {
+        padding: 1em;
+    }
+
+    .h-c-h2-child {
+        align-self: center;
+        text-align: center;
+    }
+
+    .container-home-div2 {
+        position: static;
+        padding-top: 1em;
+        justify-content: flex-start;
+        min-height: max-content;
+    }
+
+    .f-h-nav, .f-h-ul {
+        align-items: center;
+    }
+
+
+    .f-h-ul {
+        margin-right: 0;
+        padding-left: 0;
+    }
+
+}
+
+
+
 /*Portfolio-page*/
 
 .portfolio-page-flex {
