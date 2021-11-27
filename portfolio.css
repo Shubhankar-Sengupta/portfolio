@@ -34,10 +34,17 @@ ul, li {
 }
 
 
+
 /*Home-page*/
+
+.span-1-container-home > img {
+    width: 100%;
+}   
+
 
 .f-c-m {
     display: flex;
+    margin-top: 1.5em;
 }
 
 .nav-content {
@@ -109,6 +116,7 @@ ul, li {
 .p-h-info {
     color: var(--primary-grayish-blue);
     line-height: 2.083em;
+    opacity: .8;
 }
 
 
@@ -214,5 +222,81 @@ ul, li {
 .form-control {
     line-height: 2.275em;
     font-size: .825em;
-    background-color: rgba(151, 151, 151, .3);
+    background-color: rgba(151, 151, 151, .2);
+}
+
+
+/*Manage project-01*/
+
+.manage-pro-grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5em;
+    margin-top: 4em;
+}
+
+.prev-arrow, .next-arrow {
+    display: grid;
+    padding: 1em;
+}
+
+.next-arrow {
+    grid-template-columns: repeat(2, minmax(50px, 100px));
+}
+
+.prev-arrow {
+    grid-template-columns: 90px 150px;
+}
+
+.prev-project {
+    grid-column: 2/3;
+}
+
+.prev-project, .next-project {
+    opacity:.8
+}
+
+.chg-grid-order {
+    order: 2;
+}
+
+.next-arrow, .follow-up-justify {
+    justify-self: end;
+}
+
+.bkmk-chk {
+    align-self: center;
+}
+
+.follow-up-justify, .prev-arrow {
+    align-self: end;
+}
+
+.color-size-manage-01 {
+    color: var(--primary-cyan);
+    font-weight: 700;
+}
+
+.manage-01-h2-common {
+    font-weight: 400;
+}
+
+.grid1-section-child1 {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: grid;
+    gap: 2em;
+}
+
+.web-visit {
+    justify-self: start;
+}
+
+.mentor-underline-m01 {
+    text-decoration: 1px solid underline;
+}
+
+.display-center-vertically {
+    grid-row: 1/3;
+    align-self: center;
 }
