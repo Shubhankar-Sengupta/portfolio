@@ -13,6 +13,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="portfolio.css">
 
 </head>
@@ -27,12 +31,17 @@
         fill="#33323D" />
     </svg>
 
-    <nav class="nav-content">
+    <nav class="navbar navbar-expand-md nav-content navbar-light">
 
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./portfolio.html">Portfolio</a></li>
-        <li><a href="./contact.html">Contact Me</a></li>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navhelp"
+        aria-controls="navhelp" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <ul class="collapse navbar-collapse navbar-nav" id="navhelp">
+        <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Me</a></li>
       </ul>
 
     </nav>
@@ -41,9 +50,13 @@
 
   <main class="container">
 
-    <div>
+    <div class="similar-class-exec">
 
-      <img src="./images/detail/desktop/image-insure-hero.jpg" alt="insure-main-img">
+      <img src="./images/detail/desktop/image-insure-hero.jpg" srcset="./images/detail/desktop/image-insure-hero@2x.jpg 2220w,
+      ./images/detail/tablet/image-insure-hero.jpg 689w,
+      ./images/detail/tablet/image-insure-hero@2x.jpg 1378w,
+      ./images/detail/mobile/image-insure-hero.jpg 311w,
+      ./images/detail/mobile/image-insure-hero@2x.jpg 622w," alt="insure-main-img">
 
     </div>
 
@@ -97,8 +110,28 @@
 
           <h2 class="manage-01-h2-common">Static Previews</h2>
 
-          <figure><img src="./images/detail/desktop/image-insure-preview-1.jpg" alt="preview-1-insure"></figure>
-          <figure><img src="./images/detail/desktop/image-insure-preview-2.jpg" alt="preview-2-insure"></figure>
+          <figure class="fig-1">
+
+            <img src="./images/detail/desktop/image-insure-preview-1.jpg" srcset="./images/detail/desktop/image-insure-preview-1@2x.jpg 1270w,
+            ./images/detail/tablet/image-insure-preview-1.jpg 689w,
+            ./images/detail/tablet/image-insure-preview-1@2x.jpg 1378w,
+            ./images/detail/mobile/image-insure-preview-1.jpg 313w,
+            ./images/detail/mobile/image-insure-preview-1@2x.jpg 626w," sizes="(min-width:630px) 50vw, 100vw"
+              alt="preview-1-insure">
+
+          </figure>
+
+
+          <figure class="fig-2">
+
+            <img src="./images/detail/desktop/image-insure-preview-2.jpg" srcset="./images/detail/desktop/image-insure-preview-2@2x.jpg 1270w,
+            ./images/detail/tablet/image-insure-preview-2.jpg 689w,
+            ./images/detail/tablet/image-insure-preview-2@2x.jpg 1378w,
+            ./images/detail/mobile/image-insure-preview-2.jpg 313w,
+            ./images/detail/mobile/image-insure-preview-2@2x.jpg 626w," sizes="(min-width:630px) 50vw, 100vw"
+              alt="preview-2-insure">
+
+          </figure>
 
         </section>
 
@@ -125,8 +158,7 @@
 
         <span class="chg-grid-order next-project">Next Project</span>
 
-        <a class="follow-up-justify" href="./fylo.html"><img src="./images/icons/arrow-right.svg"
-            alt="right-arrow"></a>
+        <a class="follow-up-justify" href="./fylo.html"><img src="./images/icons/arrow-right.svg" alt="right-arrow"></a>
 
       </section>
 
@@ -138,7 +170,10 @@
 
       <h2 class="h-c-h2-child">Interested in doing a project together?</h2>
 
-      <a href="./contact.html" class="btn btn-outline-secondary contact-btn-home" style="align-self: center;">Contact Me</a>
+      <div class="line"></div>
+
+      <a href="./contact.html" class="btn btn-outline-secondary contact-btn-home" style="align-self: center;">Contact
+        Me</a>
 
     </section>
 
@@ -202,6 +237,8 @@
     </nav>
 
   </footer>
+
+  <script src="portfolio.js"></script>
 
 </body>
 

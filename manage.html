@@ -12,6 +12,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="portfolio.css">
 
 </head>
@@ -26,12 +30,17 @@
         fill="#33323D" />
     </svg>
 
-    <nav class="nav-content">
+    <nav class="navbar navbar-expand-md nav-content navbar-light">
 
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./portfolio.html">Portfolio</a></li>
-        <li><a href="./contact.html">Contact Me</a></li>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navhelp"
+        aria-controls="navhelp" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <ul class="collapse navbar-collapse navbar-nav" id="navhelp">
+        <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Me</a></li>
       </ul>
 
     </nav>
@@ -40,14 +49,19 @@
 
   <main class="container">
 
-    <div>
+    <div class="similar-class-exec">
 
-      <img src="./images/detail/desktop/image-manage-hero.jpg" alt="manage-main-img">
+      <img src="./images/detail/desktop/image-manage-hero.jpg" srcset="./images/detail/desktop/image-manage-hero@2x.jpg 2220w,
+      ./images/detail/tablet/image-manage-hero.jpg 689w,
+      ./images/detail/tablet/image-manage-hero@2x.jpg 1378w,
+      ./images/detail/mobile/image-manage-hero.jpg 311w,
+      ./images/detail/mobile/image-manage-hero@2x.jpg 622w,
+      " alt="manage-main-img">
 
     </div>
 
 
-    <div class="manage-pro-grid1">
+    <div class="manage-pro-grid1 media-controls">
 
       <div class="grid1-manage-div1">
 
@@ -79,7 +93,8 @@
 
           <p class="p-h-info">
 
-            This project was a front-end challenge from <span class="mentor-underline-m01">Frontend Mentor</span>. It’s a platform that
+            This project was a front-end challenge from <span class="mentor-underline-m01">Frontend Mentor</span>. It’s
+            a platform that
             enables you to practice building websites to a design and project brief. Each challenge
             includes mobile and desktop designs to show how the website should look at different
             screen sizes. Creating these projects has helped me refine my workflow and solve
@@ -95,8 +110,29 @@
 
           <h2 class="manage-01-h2-common">Static Previews</h2>
 
-          <figure><img src="./images/detail/desktop/image-manage-preview-1.jpg" alt="preview-1-manage"></figure>
-          <figure><img src="./images/detail/desktop/image-manage-preview-2.jpg" alt="preview-2-manage"></figure>
+          <figure class="fig-1">
+
+            <img src="./images/detail/desktop/image-manage-preview-1.jpg" srcset="./images/detail/desktop/image-manage-preview-1@2x.jpg 1270w,
+            ./images/detail/tablet/image-manage-preview-1.jpg 689w,
+            ./images/detail/tablet/image-manage-preview-1@2x.jpg 1378w,
+            ./images/detail/mobile/image-manage-preview-1.jpg 313w,
+            ./images/detail/mobile/image-manage-preview-1@2x.jpg 626w," sizes="(min-width:630px) 50vw, 100vw"
+              alt="preview-1-manage">
+
+          </figure>
+
+
+          <figure class="fig-2">
+
+            <img src="./images/detail/desktop/image-manage-preview-2.jpg" srcset="./images/detail/desktop/image-manage-preview-2@2x.jpg 1270w,
+            ./images/detail/tablet/image-manage-preview-2.jpg 689w,
+            ./images/detail/tablet/image-manage-preview-2@2x.jpg 1378w,
+            ./images/detail/mobile/image-manage-preview-2.jpg 313w,
+            ./images/detail/mobile/image-manage-preview-2@2x.jpg 626w," sizes="(min-width:630px) 50vw, 100vw"
+              alt="preview-2-manage">
+
+
+          </figure>
 
         </section>
 
@@ -108,7 +144,8 @@
 
       <section class="prev-arrow border border-start-0 border-top-0 border-bottom-0 border-2">
 
-        <a class="display-center-vertically" href="./fylo.html"><img src="./images/icons/arrow-left.svg" alt="left-arrow"></a>
+        <a class="display-center-vertically" href="./fylo.html"><img src="./images/icons/arrow-left.svg"
+            alt="left-arrow"></a>
 
         <h2 class="manage-01-h2-common">Fylo</h2>
 
@@ -122,7 +159,8 @@
 
         <span class="chg-grid-order next-project">Next Project</span>
 
-        <a class="follow-up-justify" href="./bookmark.html"><img src="./images/icons/arrow-right.svg" alt="right-arrow"></a>
+        <a class="follow-up-justify" href="./bookmark.html"><img src="./images/icons/arrow-right.svg"
+            alt="right-arrow"></a>
 
       </section>
 
@@ -134,7 +172,10 @@
 
       <h2 class="h-c-h2-child">Interested in doing a project together?</h2>
 
-      <a href="./contact.html" class="btn btn-outline-secondary contact-btn-home" style="align-self: center;">Contact Me</a>
+      <div class="line"></div>
+
+      <a href="./contact.html" class="btn btn-outline-secondary contact-btn-home" style="align-self: center;">Contact
+        Me</a>
 
     </section>
 
@@ -199,6 +240,7 @@
 
   </footer>
 
+  <script src="portfolio.js"></script>
 
 </body>
 
