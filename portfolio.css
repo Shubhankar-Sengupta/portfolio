@@ -478,8 +478,12 @@ ul, li {
 
 @media (max-width:768px) {
 
-    .f-h-ul li {
+    .f-h-ul li, .proj-section-1 {
         padding-top: 1em;
+    }
+
+    .footer-div-icons {
+        min-width: 100px;
     }
 
 }
