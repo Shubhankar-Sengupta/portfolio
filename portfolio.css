@@ -295,6 +295,11 @@ ul, li {
     order: -1;
 }
 
+.p-page-chg {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
 
 /*Portfolio page-media queries*/
 
@@ -306,6 +311,10 @@ ul, li {
 
     .p-order-diff {
         order: 1;
+    }
+
+    .p-page-chg {
+        padding: 2em;
     }
 
 }
