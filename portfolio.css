@@ -113,6 +113,7 @@ ul, li {
     background-color: var(--primary-grayish-blue);
 }
 
+
 .f-h-nav {
     display:flex;
     justify-content: space-between;
@@ -179,7 +180,30 @@ ul, li {
 
 .h-a-info {
     padding-top: 6em;
+    position: relative;
 }
+
+
+.h-img-1::before , .h-img-1::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: rgba(0,0,0,.3);
+    right: 0; 
+}
+
+
+.h-img-1::before {
+    top:90px; 
+}
+
+.h-img-1::after {
+    bottom: 0;
+}
+
+
 
 .h-a-s-info-child { 
     padding-left: 10.05em;
@@ -278,6 +302,10 @@ ul, li {
     
     .navbar-toggler:focus {
         box-shadow: none;
+    }
+
+    .h-img-1::before , .h-img-1::after {
+        display: none;
     }
 
 }
