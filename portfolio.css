@@ -33,9 +33,15 @@ ul, li {
     text-transform: uppercase;
 }
 
+
+
 .navbar-light .navbar-toggler {
     border-color: rgba(0,0,0,0);
     margin-left: auto;
+}
+
+#about_me:hover {
+    background-color: var(--primary-cyan);
 }
 
 
@@ -47,6 +53,11 @@ ul, li {
     height: 1em;
     background-position: center;
     background-size: 100%;
+}
+
+.btn.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: var(--primary-grayish-blue);
 }
 
 .line {
