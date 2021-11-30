@@ -472,7 +472,7 @@ ul, li {
 }
 
 
-@media(orientation:portrait) or (max-width:1100px) {
+@media (max-width:1100px), (orientation:portrait) { /*or condition*/
 
     .fig-1 img, .fig-2 img {
         width: 100%;
