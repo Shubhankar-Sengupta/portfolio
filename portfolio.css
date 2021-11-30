@@ -355,6 +355,10 @@ ul, li {
     bottom: 0;
 }
 
+.pt-mrgn {
+    margin-bottom: 2em;
+} 
+
 
 /*Portfolio page-media queries*/
 
