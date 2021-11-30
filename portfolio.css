@@ -469,6 +469,10 @@ ul, li {
         display: block;
     }
 
+}
+
+@media(orientation:portrait) or (max-width:1100px) {
+
     .fig-1 img, .fig-2 img {
         width: 100%;
     }
