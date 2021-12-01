@@ -41,6 +41,14 @@ i {
     font-size: .715em;
 }
 
+.normal-class-color {
+    color: var(--primary-cyan);
+}
+
+.was-validated .form-control:invalid, .was-validated .form-control:valid {
+    background-image: none;
+}
+
 
 .navbar-light .navbar-toggler {
     border-color: rgba(0,0,0,0);

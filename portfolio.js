@@ -3,9 +3,9 @@
 const hamburger_button = document.querySelector('.navbar-toggler');
 const icon_toggler = document.querySelector('.navbar-toggler-icon');
 const navbar_anchors = document.querySelectorAll('#navhelp .nav-link');
-const inp_element = document.querySelectorAll('input');
-const text_area = document.querySelector('textarea');
-const btn = document.querySelector('.contact-pg-btn-form');
+
+
+
 
 
 // function declaration
