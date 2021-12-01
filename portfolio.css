@@ -41,9 +41,7 @@ i {
     font-size: .715em;
 }
 
-.normal-class-color {
-    color: var(--primary-cyan);
-}
+
 
 .was-validated .form-control:invalid, .was-validated .form-control:valid {
     background-image: none;
@@ -315,6 +313,17 @@ i {
         padding-top: 2em;
         padding-bottom: 1em;
     }
+
+    /*Common to all the pages for ul this #navhelp id below*/
+
+    #navhelp { 
+        position: absolute;
+        z-index: 1;
+        right: 0px;
+        min-width: 300px;
+        top: 60px;
+        transition: all 0.45s ease-out 0s;
+    }
     
     #navhelp .nav-link {
         color: #fff;
@@ -325,6 +334,10 @@ i {
     }
 
     .h-img-1::before , .h-img-1::after {
+        display: none;
+    }
+
+    .line {
         display: none;
     }
 
@@ -628,11 +641,25 @@ i {
 
 }
 
+/*Special adjustments for the data*/
+
 @media (width:768px) {
+
+    #navhelp {
+        position: static;
+    }
 
     .f-h-ul {
         margin-bottom: 1em;
-    } 
+    }
+    
+    .line {
+        display: none !important;
+    }
+
+    .container-home-div2 h1 {
+        width: 100vw;
+    }
 }
 
 
@@ -735,6 +762,7 @@ i {
     }
 
 }
+
 
 
 
