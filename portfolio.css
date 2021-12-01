@@ -3,6 +3,7 @@
 /*CSS custom properties*/
 /*Some global properties*/
 
+
 :root {
 
     /*Colors Primary and Secondary*/
@@ -16,6 +17,7 @@
     /*fonts to use*/
     --headings-font: 'Ibarra Real Nova', serif;
     --body-font:'Public Sans', sans-serif;
+    --font-proj:15px;
 
 }
 
@@ -277,6 +279,10 @@ ul, li {
         align-items: center;
     }
 
+    .f-h-nav {
+        padding: 3em 2em;
+    }
+
 
     .f-h-ul {
         margin-right: 0;
@@ -325,6 +331,10 @@ ul, li {
 
 
 /*Portfolio-page*/
+
+.fnt-chk {
+    font-size: var(--font-proj);
+}
 
 .portfolio-page-flex {
     display: flex;
@@ -637,6 +647,62 @@ ul, li {
         grid-column: 2/3;
     }
 
+}
+
+
+@media (max-width:768px), (orientation:portrait) {
+
+    .key-controls {
+        gap: .45em;
+    }
+
+    .key-controls .prev-arrow  {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .prev-project, .next-project {
+        grid-column: 1/3;
+    }
+
+    .prev-project {
+        justify-self: center;
+    } 
+
+    .display-center-vertically h2, .next-arrow {
+        justify-self: end;
+    }
+
+    .prev-arrow, .next-arrow {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}
+
+
+@media (max-width:768px) {
+
+    .display-center-vertically, .follow-up-justify, .bkmk-chk {
+        grid-column: 1/3;
+    }
+
+    .bkmk-chk {
+        grid-row: 2/3;
+        justify-self: end;
+    }
+
+    .next-project {
+        justify-self: end;
+    }
+
+    .prev-project {
+        justify-self: start;
+    }
+
+    .display-center-vertically, .follow-up-justify {
+        padding-bottom: .55em;
+    } 
+
+    
 }
 
 
