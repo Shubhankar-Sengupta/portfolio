@@ -187,7 +187,7 @@ ul, li {
 .h-img-1::before , .h-img-1::after {
     content: '';
     display: block;
-    width: 100%;
+    width: 50%;
     height: 1px;
     position: absolute;
     background-color: rgba(0,0,0,.3);
@@ -309,6 +309,9 @@ ul, li {
     }
 
 }
+
+
+
 
 
 /*Common for all navbars*/
@@ -533,9 +536,6 @@ ul, li {
         justify-self: start;
     }
 
-    .manage-pro-grid1 {
-        display: block;
-    }
 
 }
 
@@ -604,6 +604,13 @@ ul, li {
 
 }
 
+
+@media (min-width:1183px) and (max-width:1264px) {
+
+    .h-a-s-info-child {
+        padding-left: 10em;
+    }
+}
 
 /*Manage project-01, bookmark-01, insure-01, fylo-01 - media queries (combined)--section part */
 
