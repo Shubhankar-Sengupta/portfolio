@@ -614,6 +614,13 @@ ul, li {
 
 }
 
+@media (width:768px) {
+
+    .f-h-ul {
+        margin-bottom: 1em;
+    } 
+}
+
 
 @media (min-width:1183px) and (max-width:1264px) {
 
@@ -705,6 +712,14 @@ ul, li {
     } 
 
     
+}
+
+@media (max-width:280px) {
+
+    .prev-arrow, .next-arrow {
+        padding: 0;
+    }
+
 }
 
 
