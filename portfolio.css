@@ -660,12 +660,13 @@ ul, li {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .prev-project, .next-project {
+    .next-project {
         grid-column: 1/3;
     }
 
     .prev-project {
-        justify-self: center;
+        grid-column: 2/3;
+        justify-self: start;
     } 
 
     .display-center-vertically h2, .next-arrow {
@@ -695,6 +696,7 @@ ul, li {
     }
 
     .prev-project {
+        grid-column: 1/3;
         justify-self: start;
     }
 
