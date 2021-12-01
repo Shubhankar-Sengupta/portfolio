@@ -35,6 +35,11 @@ ul, li {
     text-transform: uppercase;
 }
 
+i {
+    font-weight: 700;
+    color: var(--secondary-bright-red);
+    font-size: .715em;
+}
 
 
 .navbar-light .navbar-toggler {

@@ -25,7 +25,8 @@
 
   <header class="container f-c-m pb-5" role="navigation">
 
-    <svg style="align-self: center;" width="61" height="32" viewBox="0 0 61 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg style="align-self: center;" width="61" height="32" viewBox="0 0 61 32" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
       <path id="Combined Shape" fill-rule="evenodd" clip-rule="evenodd"
         d="M31.3469 26.1224L15.6735 0L0 26.1224H31.3469ZM60.0816 5.87755L44.4082 32L28.7347 5.87755H60.0816Z"
         fill="#33323D" />
@@ -106,13 +107,21 @@
 
     <h2 class="cm-contact">Contact Me</h2>
 
-    <form class="row frm-display g-3" action="/" method="get">
+    <form class="row frm-display g-3 was-validated needs-validation" action="" method="get" novalidate>
 
       <div class="col-auto">
 
         <label class="form-label" for="name">Name</label>
 
-        <input id="name" class="form-control" type="text" placeholder="Jane Appleseed" aria-required="true" required>
+        <input id="name" name="name" class="form-control" type="text" placeholder="Jane Appleseed" aria-required="true"
+          required>
+
+        <div class="valid-feedback">
+        </div>
+
+        <div class="invalid-feedback">
+          <i>This field is required</i>
+        </div>
 
       </div>
 
@@ -120,8 +129,15 @@
 
         <label class="form-label" for="email_addr">Email Address</label>
 
-        <input id="email_addr" class="form-control" type="email" placeholder="email@example.com" aria-required="true"
-          required>
+        <input id="email_addr" name="email_addr" class="form-control" type="email" placeholder="email@example.com"
+          aria-required="true" required>
+
+        <div class="valid-feedback">
+        </div>
+
+        <div class="invalid-feedback">
+         <i>This field is required</i>
+        </div>
 
       </div>
 
@@ -129,8 +145,15 @@
 
         <label class="form-label" for="msg">Message</label>
 
-        <textarea style="resize: none;" name="" class="form-control" id="msg" cols="30" rows="4"
+        <textarea style="resize: none;" name="msg" class="form-control" id="msg" cols="30" rows="4"
           placeholder="How can I help?" aria-required="true" required></textarea>
+
+        <div class="valid-feedback">
+        </div>
+
+        <div class="invalid-feedback">
+         <i>This field is required</i>
+        </div>
 
       </div>
 
