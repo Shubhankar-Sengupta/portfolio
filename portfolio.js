@@ -2,9 +2,6 @@
 
 const hamburger_button = document.querySelector('.navbar-toggler');
 const icon_toggler = document.querySelector('.navbar-toggler-icon');
-const navbar_anchors = document.querySelectorAll('#navhelp .nav-link');
-
-
 
 
 

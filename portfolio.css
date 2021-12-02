@@ -42,7 +42,6 @@ i {
 }
 
 
-
 .was-validated .form-control:invalid, .was-validated .form-control:valid {
     background-image: none;
 }
@@ -81,9 +80,7 @@ i {
     max-width: 700px;
 }
 
-.link-clk {
-    color: var(--primary-cyan);
-}
+
 
 .contact-btn-home { /*0 0 auto-- flex basis is auto, flex-grow:0 and flex-shrink:0*/
     flex: none; 
@@ -764,5 +761,4 @@ i {
 }
 
 
-
-
+/*Navbar color change via JS*/
